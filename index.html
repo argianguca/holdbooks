@@ -4,77 +4,140 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/main.css">
+  
     <title>HoldBooks</title>
   </head>
-  <body style="background-color: #FFFEE9;">
+  <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light static-top">
-      <div class="container">
-        <a href="#" class="navbar-brand">
-          <img src="assets/img_logo.svg" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <!--NAVBAR KIRI-->
-          <ul class="navbar-nav ml-auto mr-5">
-            <li class="nav-item active">
-              <a href="#home" class="nav-link">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Categories</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Forum</a>
-            </li>
-          </ul>
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div class="nav__logo">
+          <a href="#home"><img src="assets/img_logo.svg" alt="" class="nav__logo"></a>
+        </div>
 
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#login" class="nav-link">Login</span>
-              </a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
             </li>
-            <li class="nav-item">
-              <button class="btn btn-outline-primary">Register</button>
+            <li class="nav__item">
+              <a href="#categories" class="nav__link active">Categories</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link"><img src="assets/cart-icon.svg" alt="" width="15px"></a>
+            <li class="nav__item">
+              <a href="#" class="nav__link active">Forum</a>
             </li>
           </ul>
         </div>
+
+        <div class="nav__menu">
+            <li class="nav__item">
+                <a href="#" class="nav__link">Login</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link active">Register</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link active"><img src="assets/cart-icon.svg" alt="" class="img__cart"></a>
+            </li>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+
+      </nav>
+   </header>
+
+   <main class="l-main">
+     <section class="home bd-grid" id="home">
+
+      <div class="home__data">
+        <h1 class="home__title"><span style="color: #C47F65;">Hold</span>Books</h1>
+        <p class="home__desc">
+          The best secondhand book store.
+          Browse thousands of good-quality secondhand books with the best price.
+        </p>
+        <a href="#" class="button">BROWSE BOOKS</a>
       </div>
-    </nav>
 
+      <div class="home__img">
+        <img src="assets/hero_img.png" alt="">
+      </div>
 
-    <!--HERO PAGE-->
-    <section id="home" class="hero-section mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mt-5 pt-5">
-            <div class="hero-content">
-              <h1><span style="color: #C47F65;">Hold</span>Books</h1>
-              <p>The best secondhand book store. Browse thousands of good-quality secondhand books with the best price.</p>
-              <a href="#" class="btn btn-outline-danger">Browse Books</a>
-            </div>
+     </section>
+   </main>
+
+   <div class="category section" id="category" >
+    <h2 class="section__title">
+      Find Your Favorite Genre
+    </h2>
+    <div class="category__container bd-grid">
+      <ul class="category__menu">
+
+        <li class="category__list">
+          <div class="category-icon">
+            <img src="assets/icons/art.svg">
           </div>
+          <p class="category-title">
+          Art
+          </p>
+        </li>
 
-          <div class="col-lg-6">
-						<div class="hero-img ml-5 pl-5">
-							<img src="assets/hero_img.png" width="90%">
-						</div>
-					</div>
+        <li class="category__list">
+          <img src="assets/icons/fantasy.svg" alt="" class="category-icon">
+          <p class="category-title">
+          Fantasy
+          </p>
+        </li>
+
+        <li class="category__list">
+          <img src="assets/icons/comicbook.svg" alt="" class="category-icon">
+          <p class="category-title">
+          Comicbook
+          </p>
+        </li>
+
+        <li class="category__list">
+          <img src="assets/icons/education.svg" alt="" class="category-icon">
+          <p class="category-title">
+          Education
+          </p>
+        </li>
+
+        <li class="category__list">
+          <img src="assets/icons/romance.svg" alt="" class="category-icon">
+          <p class="category-title">
+          Romance
+          </p>
+        </li>
+
+        <li class="category__list">
+          <img src="assets/icons/sci_fi.svg" alt="" class="category-icon">
+          <p class="category-title">
+          Sci-Fi
+          </p>
+        </li>
+
+        <li class="category__list">
+          <img src="assets/icons/short_story.svg" alt="" class="category-icon">
+          <p class="category-title">
+          Short Story
+          </p>
+        </li>
+
+        <li class="category__list">
+          <img src="assets/icons/mystery.svg" alt="" class="category-icon">
+          <p class="category-title">
+          Mystery
+          </p>
+        </li>
+      </ul>
+
+    </div>
+   </div>
 
 
-        </div>
-      </div>
-    </section>
 
 
 
@@ -98,20 +161,6 @@
 
 
 
-
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
+ 
   </body>
 </html>
